@@ -3,16 +3,20 @@ import Container from './components/Container/Container';
 import Favorite from './components/Favorite/Favorite';
 import NavBar from './components/NavBar/NavBar';
 import Home from './Home/Home';
-
+import ErrorPage from './components/FailUrl/FailUrl';
+import { Routes, Route } from 'react-router-dom';
 
 const App = () => {
   return (
     <main>
       <NavBar />
       <Container>
-        <Home />
-        <About />
-        <Favorite />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/favorite" element={<Favorite/>} />
+          <Route path='*' element={<ErrorPage />} />
+        </Routes>
       </Container>
     </main>
   );
