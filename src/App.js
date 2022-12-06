@@ -1,8 +1,8 @@
+import About from './components/About/About';
 import Container from './components/Container/Container';
-import Hero from './components/Hero/Hero';
-import SearchForm from './components/SearchForm/SearchForm';
-import List from './components/List/List';
+import Favorite from './components/Favorite/Favorite';
 import NavBar from './components/NavBar/NavBar';
+import Home from './Home/Home';
 
 
 const App = () => {
@@ -10,9 +10,9 @@ const App = () => {
     <main>
       <NavBar />
       <Container>
-        <Hero />
-        <SearchForm />
-        <List />
+        <Home />
+        <About />
+        <Favorite />
       </Container>
     </main>
   );
