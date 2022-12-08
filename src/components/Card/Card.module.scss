@@ -16,15 +16,20 @@
     background-color: #fff;
     border-style: none;
     border: 0px;   
+
+    &:hover {
+        color: red;
+        cursor: pointer;
+    }
+}
+
+.buttons {
+    display: flex;
+    justify-content: right;
 }
 
 .isActive {
     border: none;
     color: gold;
     background-color: #fff;
-
-    &:hover {
-        color: red;
-        cursor: pointer;
-    }
 }
